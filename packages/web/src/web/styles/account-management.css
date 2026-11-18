@@ -1,0 +1,22 @@
+/* Private owner tools and recipient password recovery. */
+.owner-account-controls{padding:16px;border:1px solid #b0f3932a;background:#b0f39306;border-radius:8px;margin:16px 0 22px}
+.owner-account-controls h4{display:flex;align-items:center;gap:7px;font-size:11px;color:#c9ddb8}
+.owner-email{font-size:13px;overflow-wrap:anywhere;color:#d6e7cb;margin:13px 0 7px;user-select:text}
+.owner-account-controls p{font-size:10px;line-height:1.7;margin:7px 0;color:#a5b79b}
+.owner-account-controls .secondary{display:flex;align-items:center;gap:7px;font-size:10px;margin:12px 0 9px;min-height:44px;padding:10px 12px}
+.owner-account-controls small{display:block;font-size:9px;line-height:1.7;color:#9dae93}
+.owner-account-controls output{display:block;color:var(--accent);font-size:10px;line-height:1.7;margin-top:12px}
+.owner-reset-link{border-top:1px solid #3a4e31;padding-top:16px;margin-top:16px}
+.owner-reset-link input{width:100%;font:inherit;font-size:12px;min-height:44px;padding:10px;background:#111b14;border:1px solid #465d39;border-radius:6px;color:#cadfbb;box-sizing:border-box}
+.owner-reset-link label{margin-bottom:8px}
+.reset-page{min-height:100dvh;display:flex;align-items:center;justify-content:center;padding:24px;background:radial-gradient(ellipse at 60% 20%,#406b2825,transparent 60%),#101512}
+.reset-panel{width:440px;max-width:100%;padding:30px;background:#1a241d;border:1px solid #3a4c3c;border-radius:16px;box-shadow:0 20px 70px #0005}
+.reset-panel .wordmark{display:block;font-size:36px;margin-bottom:22px}
+.reset-symbol{color:var(--accent);margin-bottom:14px}
+.reset-panel h1{font-family:'Barlow Condensed';font-size:38px;margin-bottom:12px}
+.reset-panel p{font-size:12px;line-height:1.8;color:#a6b69c;margin:12px 0 20px}
+.reset-panel form{margin-top:24px}
+.reset-panel input{font-size:16px;min-height:44px}
+.reset-panel .primary{width:100%;justify-content:center;margin-top:16px;min-height:44px;font-size:12px}
+.reset-panel small{display:block;font-size:10px;line-height:1.7;color:#92a087;margin-top:16px}
+@media(max-width:600px){.reset-page{padding:16px}.reset-panel{padding:24px 20px}.owner-reset-link input{font-size:16px}.owner-email{font-size:12px}}

@@ -1,0 +1,18 @@
+import type { RouterClient } from "@orpc/server";
+import { createApp } from "./__core/app";
+import { ping } from "./routes/ping";
+import { game } from "./routes/game";
+import { auth } from "./auth";
+import { chat } from "./routes/chat";
+import { moderation } from "./routes/moderation";
+import { accountManagement } from "./routes/account-management";
+import { bazaar } from "./routes/bazaar";
+import { staff } from "./routes/staff";
+import { casino } from "./routes/casino";
+import { clans } from "./routes/clans";
+export const router = { ping, game, chat, moderation, accountManagement, bazaar, staff, casino, clans };
+export type AppRouter = typeof router;
+export type AppRouterClient = RouterClient<AppRouter>;
+const app = createApp(router);
+app.on(["GET", "POST"], "/api/auth/*", (c) => auth.handler(c.req.raw));
+export default app;

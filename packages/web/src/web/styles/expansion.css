@@ -1,0 +1,199 @@
+/* Casino + clans expansion. Shares the stadium mint/gold palette. */
+.casino-page,.clans-page{min-width:0}
+.exp-tabs{display:flex;gap:6px;padding:5px;background:#111a14;border:1px solid #2f3d31;border-radius:10px;margin-bottom:20px;overflow-x:auto;scrollbar-width:none}
+.exp-tabs button{flex:1 0 auto;min-height:44px;padding:10px 18px;border-radius:7px;background:transparent;color:#a9b8a6;font-size:13px;font-weight:600;white-space:nowrap}
+.exp-tabs button:hover:not(:disabled){color:#e3eedf;background:#1e2a21}
+.exp-tabs .active{background:var(--accent);color:#20311b}
+.exp-tabs .active:hover:not(:disabled){background:var(--accent);color:#20311b}
+.exp-notice{display:block;padding:14px 16px;background:#243c2b;border:1px solid #3c5a43;border-radius:10px;color:#b0f393;margin-bottom:20px;font-size:13px}
+.exp-callout{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:16px 18px;background:#b0f3930a;border:1px solid #b0f39328;border-radius:10px;margin:0 0 20px;font-size:13px;color:#c6d6c0}
+.exp-callout .secondary{margin:0;min-height:44px}
+.exp-icon{width:46px;height:46px;flex-shrink:0;display:grid;place-items:center;border-radius:11px;color:var(--accent);background:#b0f39312;border:1px solid #b0f39328}
+.exp-hint{font-size:12px;color:#93a492;line-height:1.7;margin:10px 0 0}
+.exp-danger{display:flex;align-items:center;justify-content:center;min-height:44px;width:100%;padding:10px 16px;border-radius:7px;background:#f1b09312;border:1px solid #f1b09340;color:#f3b99a;font-size:13px;font-weight:600}
+.exp-danger:hover:not(:disabled){background:#f1b09322}
+.exp-check{flex-direction:row!important;align-items:flex-start;gap:10px!important;cursor:pointer}
+.exp-check input{width:20px!important;height:20px;flex-shrink:0;accent-color:var(--accent);margin:2px 0 0}
+.casino-page :is(input,select),.clans-page :is(input:not([type=checkbox]),select,textarea){width:100%;min-width:0;background:#111b15;border:1px solid #3b4a40;border-radius:8px;padding:12px;color:#edf5ef;font:inherit;font-size:16px;min-height:46px}
+.casino-page :is(input,select):focus-visible,.clans-page :is(input,select,textarea):focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.casino-page label,.clans-page label{display:flex;flex-direction:column;gap:7px;color:#dce8df;font-size:13px;font-weight:500}
+
+/* Dialogs: viewport-pinned header and actions */
+dialog.exp-modal{width:560px;max-width:calc(100vw - 32px);padding:0}
+dialog.exp-modal>header{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:24px;border-bottom:1px solid #334138;flex-shrink:0}
+dialog.exp-modal>header h2{margin:0;font-size:31px}
+dialog.exp-modal>header button{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#29352b;color:#c3cfc0;flex-shrink:0}
+.exp-modal-body{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:24px;display:flex;flex-direction:column;gap:16px}
+.exp-modal-body p{font-size:13px!important;line-height:1.8;color:#a7b5ab;margin:0}
+.exp-modal-body h3{font-family:"Barlow Condensed";font-size:26px;color:#f4d36c;overflow-wrap:anywhere}
+.exp-modal-body :is(input:not([type=checkbox]),textarea){width:100%;min-width:0;background:#111b15;border:1px solid #3b4a40;border-radius:8px;padding:12px;color:#edf5ef;font:inherit;font-size:16px}
+.exp-modal-body textarea{resize:vertical}
+.exp-modal-body label{display:flex;flex-direction:column;gap:7px;color:#dce8df;font-size:13px}
+dialog.exp-modal>footer{display:flex;gap:12px;padding:18px 24px;border-top:1px solid #3a4c3c;background:#202d23;flex-shrink:0}
+dialog.exp-modal>footer button{margin:0;min-height:46px;font-size:13px}
+dialog.exp-modal>footer .primary{flex:1}
+
+/* Casino */
+.casino-wallet{display:grid;grid-template-columns:1.2fr 1fr;gap:16px;margin-bottom:22px}
+.casino-wallet>div{padding:22px 24px;border-radius:15px;border:1px solid #344b3a;background:linear-gradient(120deg,#25382b,#18231c);min-width:0}
+.casino-wallet>div:last-child{background:linear-gradient(120deg,#33301c,#1d1f17);border-color:#5a5232}
+.casino-wallet span{font-size:11px;letter-spacing:1.6px;color:#a6b7a2;font-weight:600}
+.casino-wallet strong{display:flex;align-items:center;gap:10px;font-family:"Barlow Condensed";font-size:44px;line-height:1.1;margin:6px 0;color:var(--accent);overflow-wrap:anywhere}
+.casino-wallet>div:last-child strong{color:#f4d36c}
+.casino-wallet p{font-size:12px;color:#9fae9c;line-height:1.6;margin:0}
+.casino-layout{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:20px;align-items:start}
+.casino-table,.casino-exchange,.casino-history{background:#171f19;border:1px solid #33412f;border-radius:15px;padding:22px;min-width:0}
+.casino-stage{display:grid;place-items:center;min-height:260px;border-radius:13px;background:radial-gradient(ellipse at 50% 40%,#2c5a3b,#14251a 70%);border:1px solid #33553c;padding:22px;overflow:hidden}
+.roulette-wheel{position:relative;width:210px;height:210px;border-radius:50%;display:grid;place-items:center;background:repeating-conic-gradient(#b8403a 0 9.73deg,#151815 9.73deg 19.46deg);border:8px solid #c9a24d;box-shadow:0 0 0 4px #3a2d17,0 18px 50px #0007}
+.roulette-wheel::after{content:"";position:absolute;inset:34px;border-radius:50%;background:radial-gradient(circle,#2e5e3c,#173322);border:3px solid #c9a24d}
+.roulette-ball{position:relative;z-index:1;display:grid;place-items:center;min-width:82px;height:82px;padding:0 12px;border-radius:41px;font-family:"Barlow Condensed";font-size:34px;font-weight:700;color:#fff;border:3px solid #f4d36c;background:#151815;box-shadow:0 6px 20px #0008}
+.roulette-ball.red{background:#b8403a}.roulette-ball.green{background:#22894b}
+.roulette-wheel small{position:absolute;z-index:1;bottom:46px;font-size:8px;letter-spacing:1.2px;color:#d6e6cf}
+.flip-coin{width:170px;height:170px;border-radius:50%;display:grid;place-items:center;font-family:"Barlow Condensed";font-size:46px;font-weight:800;color:#4d3a10;background:radial-gradient(circle at 35% 30%,#ffe9a0,#e0b54d 55%,#a87d23);border:6px solid #f4d36c;box-shadow:inset 0 0 0 8px #c69a3a66,0 18px 45px #0007}
+.slot-reels{display:grid;grid-template-columns:repeat(3,minmax(0,120px));gap:12px;width:100%;justify-content:center;padding:16px;border-radius:14px;background:#3a2d17;border:4px solid #c9a24d}
+.slot-reels>div{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;min-height:140px;border-radius:9px;background:linear-gradient(#fdfbf2,#e3dcc7);color:#1c241e;box-shadow:inset 0 8px 14px #0003,inset 0 -8px 14px #0003}
+.slot-reels b{font-size:46px;line-height:1}
+.slot-reels span{font-size:12px;font-weight:600;color:#55604f}
+.casino-playing .roulette-wheel{animation:casino-spin .7s linear infinite}
+.casino-playing .roulette-ball{animation:casino-spin .7s linear infinite reverse}
+.casino-playing .flip-coin{animation:casino-flip .45s linear infinite}
+.casino-playing .slot-reels b{animation:casino-reel .25s linear infinite}
+.casino-result{display:flex;flex-direction:column;gap:4px;margin-top:16px;padding:16px 18px;border-radius:11px;background:#232c25;border:1px solid #3b4a3d;animation:casino-reveal .35s ease-out}
+.casino-result b{font-family:"Barlow Condensed";font-size:28px;text-transform:capitalize;overflow-wrap:anywhere}
+.casino-result span{font-size:13px;color:#b5c3b1;line-height:1.6}
+.casino-result.win{background:#b0f39314;border-color:#b0f39355}.casino-result.win b{color:var(--accent)}
+.casino-controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;align-items:end;margin-top:18px}
+.casino-controls .primary{min-height:46px;font-size:14px;margin:0;overflow-wrap:anywhere}
+.casino-rules{margin-top:20px;padding:18px;border-radius:11px;background:#111a14;border:1px solid #2e3b30}
+.casino-rules h3{font-family:"Barlow Condensed";font-size:24px;margin-bottom:8px}
+.casino-rules p{font-size:13px;line-height:1.8;color:#a9b7a6;margin:0}
+.casino-rules small{display:block;font-size:11px;line-height:1.7;color:#879785;margin-top:12px}
+.slot-paytable{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.slot-paytable span{font-size:12px;padding:6px 10px;border-radius:6px;background:#242f26;border:1px solid #3c4c3d;color:#f4d36c}
+.casino-exchange{display:flex;flex-direction:column;gap:14px;position:sticky;top:20px}
+.casino-exchange h2{font-family:"Barlow Condensed";font-size:31px;margin:4px 0 0}
+.casino-exchange>p{font-size:13px;color:#a2b09f;line-height:1.7;margin:0}
+.casino-exchange .secondary{margin:0;min-height:46px;width:100%;font-size:13px}
+.casino-exchange small{font-size:11px;line-height:1.7;color:#879785}
+.casino-history{margin-top:22px}
+.casino-history h2{font-family:"Barlow Condensed";font-size:31px}
+.casino-history>p{font-size:12px;color:#93a492;margin:4px 0 14px}
+.casino-history>div{max-height:430px;overflow-y:auto;overscroll-behavior:contain;display:flex;flex-direction:column;gap:8px}
+.casino-history article{display:flex;justify-content:space-between;gap:14px;padding:12px 14px;border-radius:9px;background:#1e2820;border:1px solid #2d3a2f}
+.casino-history article>div{display:flex;flex-direction:column;gap:3px;min-width:0}
+.casino-history article>div:last-child{text-align:right}
+.casino-history b{font-size:13px;text-transform:capitalize;overflow-wrap:anywhere}
+.casino-history small{font-size:11px;color:#8d9d8b;overflow-wrap:anywhere}
+@keyframes casino-spin{to{transform:rotate(360deg)}}
+@keyframes casino-flip{50%{transform:scaleX(.08)}}
+@keyframes casino-reel{0%{transform:translateY(-12px);opacity:.4}100%{transform:translateY(12px);opacity:.4}}
+@keyframes casino-reveal{from{transform:translateY(8px);opacity:0}}
+
+/* Clans */
+.clan-welcome{display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px;padding:56px 24px;border:1px solid #33412f;border-radius:15px;background:radial-gradient(ellipse at 50% 0,#547e3128,transparent 65%),#171f19;color:var(--accent)}
+.clan-welcome h2{font-family:"Barlow Condensed";font-size:40px;color:#f1f3ed}
+.clan-welcome>p{max-width:520px;font-size:13px;line-height:1.8;color:#a2b09f}
+.clan-welcome .primary{min-width:180px}
+.clan-welcome .exp-callout{margin:0;width:min(100%,520px)}
+.clan-banner{display:flex;align-items:center;gap:20px;padding:24px;border-radius:16px;border:1px solid #344b3a;background:linear-gradient(115deg,#24362b,#18231c);margin-bottom:20px}
+.clan-banner>div:nth-child(2){flex:1;min-width:0}
+.clan-banner span{font-size:11px;letter-spacing:1.5px;color:#a6b7a2;font-weight:600}
+.clan-banner h2{font-family:"Barlow Condensed";font-size:40px;line-height:1.05;margin:4px 0;overflow-wrap:anywhere}
+.clan-banner p{font-size:13px;line-height:1.7;color:#a9b7a6;margin:0;overflow-wrap:anywhere}
+.clan-banner-count{display:flex;flex-direction:column;align-items:flex-end;flex-shrink:0}
+.clan-banner-count strong{font-family:"Barlow Condensed";font-size:36px;color:#f4d36c}
+.clan-layout{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:20px;align-items:start}
+.clan-chat{display:flex;flex-direction:column;background:#171f19;border:1px solid #354431;border-radius:13px;overflow:hidden;min-width:0}
+.clan-chat>header{display:flex;align-items:center;gap:12px;padding:18px 20px;background:linear-gradient(110deg,#22321f,#1a271d);border-bottom:1px solid #354431;color:var(--accent)}
+.clan-chat>header h2{font-size:15px;font-weight:600;color:#f1f3ed}
+.clan-chat>header p{font-size:11px;color:#91a38b;margin-top:3px}
+.clan-chat-feed{height:clamp(300px,calc(100dvh - 420px),560px);overflow-y:auto;overscroll-behavior:contain;padding:18px 20px;display:flex;flex-direction:column;gap:10px;scrollbar-width:thin;scrollbar-color:#405338 #182119}
+.clan-chat-feed>.secondary{margin:0 auto 6px;min-height:40px}
+.clan-chat-feed>p{font-size:13px;color:#93a492}
+.clan-chat-feed .empty{padding:40px 10px;margin:auto 0}
+.clan-chat-feed article{max-width:82%;padding:10px 13px;border-radius:11px 11px 11px 3px;background:#222d24;border:1px solid #303f31;align-self:flex-start;min-width:0}
+.clan-chat-feed article.own{align-self:flex-end;border-radius:11px 11px 3px 11px;background:#b0f39314;border-color:#b0f39335}
+.clan-chat-feed article>div{display:flex;gap:10px;align-items:baseline;justify-content:space-between}
+.clan-chat-feed article b{font-size:12px;color:#dce8d5;overflow-wrap:anywhere}
+.clan-chat-feed article.own b{color:var(--accent)}
+.clan-chat-feed time{font-size:10px;color:#7c8c78;flex-shrink:0}
+.clan-chat-feed article p{font-size:13px;line-height:1.7;color:#c4cfbf;white-space:pre-wrap;overflow-wrap:anywhere;margin-top:4px}
+.clan-composer{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;padding:16px 18px;border-top:1px solid #2d3e29;background:#1a251c}
+.clan-composer textarea{resize:vertical;min-height:52px;max-height:150px}
+.clan-composer .primary{margin:0;align-self:stretch;min-height:46px;font-size:13px}
+.clan-composer small,.clan-composer .inline-error{grid-column:1/-1;font-size:11px;color:#7f9579}
+.clan-composer .inline-error{margin:0;font-size:12px!important}
+.clan-roster{display:flex;flex-direction:column;gap:10px;padding:20px;background:#171f19;border:1px solid #33412f;border-radius:13px;min-width:0}
+.clan-roster h2{font-family:"Barlow Condensed";font-size:27px}
+.clan-roster article{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:11px 12px;border-radius:9px;background:#1e2820;border:1px solid #2d3a2f}
+.clan-roster article>div:first-child{display:flex;flex-direction:column;gap:2px;flex:1;min-width:0}
+.clan-roster article b{font-size:13px;overflow-wrap:anywhere}
+.clan-roster article small{font-size:11px;color:#8d9d8b}
+.clan-roster article>svg{color:#f4d36c}
+.clan-member-actions{display:flex;gap:6px;flex-wrap:wrap;width:100%}
+.clan-member-actions button{flex:1;min-height:40px;padding:8px 10px;border-radius:6px;background:#28332a;border:1px solid #40543d;font-size:12px;color:#d6e2d2}
+.clan-member-actions button:hover:not(:disabled){border-color:var(--accent)}
+.clan-requests{display:flex;flex-direction:column;gap:8px;padding-top:12px;margin-top:4px;border-top:1px solid #2f3c31}
+.clan-requests h3{font-size:14px;font-weight:600}
+.clan-requests>p{font-size:12px;color:#8d9d8b}
+.clan-roster>.secondary{margin:6px 0 0;min-height:44px;width:100%;font-size:13px}
+.clan-roster>small{font-size:11px;color:#879785;line-height:1.6}
+.clan-directory-heading{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:18px}
+.clan-directory-heading>div{display:flex;gap:10px;align-items:flex-start;color:#f4d36c;flex:1 1 360px;min-width:0}
+.clan-directory-heading p{font-size:12px;line-height:1.7;color:#a2b09f}
+.clan-directory-heading .search-box{flex:0 1 300px;min-width:200px}
+.clans-page .search-box input{border:0;background:transparent;padding:0;min-height:0}
+.clan-directory{display:flex;flex-direction:column;gap:12px}
+.clan-directory>article{display:grid;grid-template-columns:64px minmax(0,1fr) auto;align-items:center;gap:18px;padding:18px 20px;border-radius:14px;background:#19211c;border:1px solid #303c33}
+.clan-directory>article:nth-child(-n+3) .clan-rank{color:#f4d36c;border-color:#f4d36c55;background:#f4d36c10}
+.clan-rank{display:grid;place-items:center;height:56px;border-radius:11px;border:1px solid #3b4a3d;font-family:"Barlow Condensed";font-size:26px;font-weight:700;color:#b9c7b5}
+.clan-directory h3{display:flex;align-items:center;gap:8px;font-family:"Barlow Condensed";font-size:26px;overflow-wrap:anywhere}
+.clan-directory h3 svg{color:#f4d36c}
+.clan-directory article p{font-size:13px;color:#a2b09f;line-height:1.6;margin:3px 0;overflow-wrap:anywhere}
+.clan-directory article small{font-size:11px;color:#8d9d8b;overflow-wrap:anywhere}
+.clan-score{display:flex;flex-direction:column;align-items:flex-end;gap:2px;min-width:150px}
+.clan-score b{font-family:"Barlow Condensed";font-size:32px;color:var(--accent);line-height:1}
+.clan-score span{font-size:10px;letter-spacing:1.4px;color:#8d9d8b}
+.clan-score .secondary{margin:10px 0 0;min-height:44px;width:100%;font-size:12px}
+
+@media(max-width:1000px){
+  .casino-layout,.clan-layout{grid-template-columns:1fr}
+  .casino-exchange{position:static}
+}
+@media(max-width:600px){
+  .casino-wallet{grid-template-columns:1fr;gap:12px}
+  .casino-wallet>div{padding:18px}
+  .casino-wallet strong{font-size:36px}
+  .casino-table,.casino-exchange,.casino-history,.clan-roster{padding:16px}
+  .casino-stage{min-height:220px;padding:14px}
+  .roulette-wheel{width:180px;height:180px}
+  .roulette-wheel::after{inset:28px}
+  .roulette-wheel small{bottom:38px}
+  .flip-coin{width:145px;height:145px}
+  .slot-reels{gap:7px;padding:10px}
+  .slot-reels>div{min-height:110px}
+  .slot-reels b{font-size:36px}
+  .casino-controls{grid-template-columns:1fr}
+  .casino-history article{flex-direction:column;gap:6px}
+  .casino-history article>div:last-child{text-align:left}
+  .clan-banner{flex-wrap:wrap;padding:18px;gap:14px}
+  .clan-banner h2{font-size:32px}
+  .clan-banner-count{flex-direction:row;align-items:baseline;gap:8px;width:100%}
+  .clan-banner-count strong{font-size:28px}
+  .clan-chat-feed{height:clamp(280px,calc(100dvh - 380px),480px);padding:14px}
+  .clan-chat-feed article{max-width:92%}
+  .clan-composer{grid-template-columns:1fr;padding:14px}
+  .clan-composer .primary{width:100%}
+  .clan-directory>article{grid-template-columns:48px minmax(0,1fr);gap:12px;padding:16px}
+  .clan-rank{height:46px;font-size:21px}
+  .clan-score{grid-column:1/-1;flex-direction:row;align-items:baseline;flex-wrap:wrap;gap:6px;min-width:0}
+  .clan-score .secondary{flex-basis:100%}
+  .clan-directory-heading .search-box{flex:1 1 100%;min-width:0}
+  dialog.exp-modal>header,.exp-modal-body{padding:18px}
+  dialog.exp-modal>header h2{font-size:26px}
+  dialog.exp-modal>footer{padding:14px;gap:8px}
+  dialog.exp-modal>footer button{flex:1;padding:10px}
+}
+@media(prefers-reduced-motion:reduce){
+  .casino-playing .roulette-wheel,.casino-playing .roulette-ball,.casino-playing .flip-coin,.casino-playing .slot-reels b,.casino-result{animation:none}
+}
